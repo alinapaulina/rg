@@ -3,7 +3,17 @@
 
 <head>
     <title> About </title>
-    <div w3-include-html="./components/common_head.html"></div>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/navigation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="favicon.ico">
@@ -37,7 +47,35 @@
 </head>
 
 <body>
-    <div w3-include-html="./components/nav.html"></div>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+        <label for="nav-toggle" class="navigation__button">
+            <span class="navigation__icon" aria-label="toggle navigation menu"></span>
+        </label>
+        <div class="navigation__background"></div>
+    
+        <nav class="navigation__nav" role="navigation">
+            <div class="container-fluid">
+                <div class="row flex-nowrap navb">
+                    <div class="navigation__item col-md-4 bg1">
+                        <div class="card card-block card-text navcard">
+                            <a href="index.html" class="navigation__link">Услуги</a>
+                        </div>
+                    </div>
+                    <div class="navigation__item  col-md-4 bg2">
+                        <div class="card card-block card-text navcard">
+                            <a href="contact.html" class="navigation__link">Товары</a>
+                        </div>
+                    </div>
+                    <div class="navigation__item  col-md-4 bg3">
+                        <div class="card card-block card-text navcard">
+                            <a href="about.html" class="navigation__link">О нас</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
 
     <div class="colorlib-about">
         <div class="colorlib-narrow-content">
@@ -115,7 +153,7 @@
                                 <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
                                     aria-labelledby="headingOne">
                                     <div class="panel-body">
-                                        <div class="row">
+                                        <!-- <div class="row">
                                             <div class="col-md-6">
                                                 <p>Реализуем проекты с максимальной
                                                     выгодой для клиента!</p>
@@ -124,7 +162,12 @@
                                             <div class="col-md-6">
                                                 <p>Гарантия на все работы.</p>
                                             </div>
-                                        </div>
+                                        </div> -->
+                                        <ul>
+                                            <li>Реализуем проекты с максимальной
+                                                выгодой для клиента!</li>
+                                            <li>Гарантия на все работы.</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -179,10 +222,7 @@
     <!-- MAIN JS -->
     <script src="balay/js/main.js"></script>
 
-    <script src="./js/include.js"></script>
-    <script>
-        includeHTML();
-    </script>
+   
 </body>
 
 </html>

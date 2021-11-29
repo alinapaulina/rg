@@ -1,13 +1,7 @@
 $(document).ready(function () {
   let init_width = window.innerWidth
-  console.log("init_width", init_width)
   if (init_width > 885) animations()
 
-  // window.addEventListener('resize', () => {
-  //   let width = window.innerWidth
-  //   console.log(width)
-  //   if(width > 885) animations()
-  // });
 
 });
 
