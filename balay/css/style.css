@@ -29,6 +29,56 @@ body {
     border-radius: 50px;
     line-height: 40px;
 }
+.logo {
+  position: inherit;
+  display: block;
+
+  }
+  .logo a img {
+    display: inline-block!important;
+    position: fixed !important;
+      top: 0px;
+      left: 0px;
+      width: 130px;
+      height: 130px;
+      /* visibility: visible; */
+      z-index: 1;
+  }
+  
+.square-holder {
+  max-width: 80%;
+  padding:10px;
+  border: 1px solid #cecece;
+  align-items: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:10px;
+  background-color:#f1f1f1;
+  min-height: 80%;
+}
+
+.square-holder img {
+  max-width:100%;
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+
+.square-holder:hover img{
+  filter:none;
+}
+.facebook, .instagram {
+  padding-right: 15px;
+}
+.facebook:hover, .instagram:hover {
+  color: #FFC300;
+}
+a.text-light:hover {
+  color: #FFC300 !important;
+}
+p.text-light:hover {
+  color: #FFC300 !important;
+}
 a {
   color: #FFC300;
   -webkit-transition: 0.5s;

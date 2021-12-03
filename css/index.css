@@ -13,6 +13,34 @@ padding-right: 0;
 padding-left: 0;
 flex-wrap: nowrap;
 }
+.logo {
+  position: inherit;
+  display: block;
+
+  }
+  /* .logo a img {
+    display: inline-block!important;
+    position: fixed !important;
+      top: 0px;
+      left: 0px;
+      width: 130px;
+      height: 130px;
+      z-index: 1;
+  } */
+  .logo a p {
+    display: inline-block!important;
+    position: fixed !important;
+      top: 0px;
+      left: 0px;
+      width: 190px;
+      height: 150px;
+      z-index: 1;
+      padding-top: 30px;
+      padding-left: 20px;
+      color: #fff;
+      font-size: 30px;
+      font-family: monospace;
+  }
 .card-img-top {
     width: 100% !important;
     height: 110vh;

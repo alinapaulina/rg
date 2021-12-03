@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/navigation.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,13 +47,19 @@
 </head>
 
 <body>
+    <div class="logo">
+        <a href="index.html">
+            <img src="./assets/logo/main_logo.png" alt="">
+        </a>
+        <!-- <img src="./assets/logo/main_logo.png" alt=""> -->
+    </div>
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
         <label for="nav-toggle" class="navigation__button">
             <span class="navigation__icon" aria-label="toggle navigation menu"></span>
         </label>
         <div class="navigation__background"></div>
-    
+
         <nav class="navigation__nav" role="navigation">
             <div class="container-fluid">
                 <div class="row flex-nowrap navb">
@@ -117,90 +123,140 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 animate-box media_link" data-animate-effect="fadeInLeft">
-                    <h2 class="colorlib-heading">Контактная информация</h2>
-                    <p>
-                        Наш номер: 079 792 425
-                    </p>
-                    <p>
-                        Наш адрес: or. Chișinău, Strada Sarmizegetusa 92
-                    </p>
-                    <p>
-                        Наша почта: reglat.cons@gmail.com
-                    </p>
-                    <p>
-                        Наши соцсети: 
-                    </p>
-                            <a href="https://www.facebook.com/reglatconstruct/">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://www.instagram.com/reglatconstruct/">
-                                <i class="fa fa-instagram" aria-hidden="true"></i>
-                            </a>
-                </div>
-                <div class="col-md-8 animate-box" data-animate-effect="fadeInRight">
-                    <div class="fancy-collapse-panel">
-                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingOne">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                                            aria-expanded="true" aria-controls="collapseOne">Почему выбирают нас?
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
-                                    aria-labelledby="headingOne">
-                                    <div class="panel-body">
-                                        <!-- <div class="row">
-                                            <div class="col-md-6">
-                                                <p>Реализуем проекты с максимальной
-                                                    выгодой для клиента!</p>
-                                                </p>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>Гарантия на все работы.</p>
-                                            </div>
-                                        </div> -->
-                                        <ul>
-                                            <li>Реализуем проекты с максимальной
-                                                выгодой для клиента!</li>
-                                            <li>Гарантия на все работы.</li>
-                                        </ul>
-                                    </div>
+            <section class="section section-default mt-none mb-none">
+                <div class="container">
+                    <h2 class="mb-sm">Наши <strong>партнёры</strong></h2>
+                    <strong>
+                        <div class="row">
+                            <div class="col-xs-2 col-sm-2 ">
+                                <div class="square-holder">
+                                    <img alt="" src="./assets/logo/logo1.png" />
                                 </div>
                             </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingTwo">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-                                            href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Что мы
-                                            делаем?
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
-                                    aria-labelledby="headingTwo">
-                                    <div class="panel-body">
-                                        <ul>
-                                            <li>Реставрация фасада зданий и деревянных домов</li>
-                                            <li>Высококачественный ремонт квартир под ключ</li>
-                                            <li>Огнезащита металлоконструкций</li>
-                                            <li>Огнезащитная обработка древесины</li>
-                                            <li>Эпоксидно-уретановые наливные полы</li>
-                                            <li>Полимерная гидроизоляция плоских крыш</li>
-                                        </ul>
-                                    </div>
+                            <div class="col-xs-2 col-sm-2 ">
+                                <div class="square-holder">
+                                    <img alt="" src="./assets/logo/logo2.png" />
                                 </div>
                             </div>
+                            <div class="col-xs-2 col-sm-2 ">
+                                <div class="square-holder">
+                                    <img alt="" src="./assets/logo/logo3.png" />
+                                </div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 ">
+                                <div class="square-holder">
+                                    <img alt="" src="./assets/logo/logo4.png" />
+                                </div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 ">
+                                <div class="square-holder">
+                                    <img alt="" src="./assets/logo/logo5.jpg" />
+                                </div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 ">
+                                <div class="square-holder">
+                                    <img alt="" src="./assets/logo/logo6.png" />
+                                </div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 ">
+                                <div class="square-holder">
+                                    <img alt="" src="./assets/logo/logo7.png" />
+                                </div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 ">
+                                <div class="square-holder">
+                                    <img alt="" src="./assets/logo/logo8.png" />
+                                </div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 ">
+                                <div class="square-holder">
+                                    <img alt="" src="./assets/logo/logo9.png" />
+                                </div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 ">
+                                <div class="square-holder">
+                                    <img alt="" src="./assets/logo/logo10.png" />
+                                </div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 ">
+                                <div class="square-holder">
+                                    <img alt="" src="./assets/logo/logo11.png" />
+                                </div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 ">
+                                <div class="square-holder">
+                                    <img alt="" src="./assets/logo/logo12.png" />
+                                </div>
+                            </div>
+
                         </div>
+                    </strong>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-muted">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+        </section>
+
+        <section class="">
+            <div class="container text-center text-md-light mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4 text-light">
+                            <i class="fas fa-gem me-3 text-light"></i><h3 class="text-light">Наши соцсети:
+                        </h3>
+                        <div>
+                            <a href="https://www.facebook.com/reglatconstruct/" class="me-9 text-light">
+                                <i class="fa fa-facebook-f fa-2x facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/reglatconstruct/" class="me-9 text-light">
+                                <i class="fa fa-instagram fa-2x instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h4 class="text-uppercase fw-bold mb-4 text-light">
+                            Меню
+                        </h4>
+                        <p>
+                            <a href="index.html" class="text-light a">Услуги</a>
+                        </p>
+                        <p>
+                            <a href="produse.html" class="text-light a">Товары</a>
+                        </p>
+                        <p>
+                            <a href="about.html" class="text-light a">О нас</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h4 class="text-uppercase fw-bold mb-4 text-light">
+                            Свяжитесь С Нами
+                        </h4>
+                        <p class="text-light"><i class="fa fa-home me-3 text-light"></i> Chișinău, Str. Sarmizegetusa 92
+                        </p>
+                        <p class="text-light">
+                            <i class="fa fa-envelope me-3 text-light"></i>
+                            reglat.cons@gmail.com
+                        </p>
+                        <p class="text-light"><i class="fa fa-phone me-3 text-light"></i> +(373) 79 792 425</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
+        <!-- <div class="text-center p-4 text-light" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div> -->
+    </footer>
+    <!-- Footer -->
     <!-- jQuery -->
     <script src="balay/js/jquery.min.js"></script>
     <!-- jQuery Easing -->
@@ -218,11 +274,10 @@
     <!-- Counters -->
     <script src="balay/js/jquery.countTo.js"></script>
 
-
     <!-- MAIN JS -->
     <script src="balay/js/main.js"></script>
 
-   
+
 </body>
 
 </html>
