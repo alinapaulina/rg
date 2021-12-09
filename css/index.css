@@ -27,12 +27,13 @@ flex-wrap: nowrap;
       height: 130px;
       z-index: 1;
   } */
+  
   .logo a p {
     display: inline-block!important;
     position: fixed !important;
       top: 0px;
       left: 0px;
-      width: 190px;
+      width: 20%;
       height: 150px;
       z-index: 1;
       padding-top: 30px;

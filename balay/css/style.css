@@ -34,6 +34,61 @@ body {
   display: block;
 
   }
+  .logo a p {
+    display: inline-block!important;
+    position: fixed !important;
+      top: 0px;
+      left: 0px;
+      width: 20%;
+      height: 150px;
+      z-index: 1;
+      padding-top: 30px;
+      padding-left: 20px;
+      color: #fff;
+      font-size: 30px;
+      font-family: monospace;
+  }
+  /* .ac {
+    padding-top: 60px;
+  } */
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  button .accordion {
+    color: #444 !important;
+  }
+  .active1, .accordion:hover {
+    background-color:#FFC300;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #444;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active1:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: #eee;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
   .logo a img {
     display: inline-block!important;
     position: fixed !important;
